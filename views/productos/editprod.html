@@ -1,0 +1,43 @@
+
+    <!-- Modal Editar-->
+    <div class="modal fade" id="exampleModalEdit" tabindex="-1" aria-labelledby="exampleModalEditLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalEditLabel">Editar Producto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="Nombre" class="form-label">Nombre:</label>
+                      <input type="Text" class="form-control" id="Nombre" pattern="[A-Z a-z]{1,50}" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="Marca" class="form-label">Marca:</label>
+                      <input type="Text" class="form-control" id="Marca" pattern="[A-Z a-z]{1,50}" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="Codigo" class="form-label">Codigo:</label>
+                      <input type="Text" class="form-control" id="Codigo" pattern="[A-Z a-z 0-9]{1,50}" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="Stock" class="form-label">Stock:</label>
+                      <input type="number" class="form-control" id="Stock" pattern="[0-9]{1,10}" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="Precio" class="form-label">Precio:</label>
+                      <input type="number" class="form-control" id="Precio" pattern="[0-9]{1,10}" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Activo</label>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
