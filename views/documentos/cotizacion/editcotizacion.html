@@ -79,7 +79,7 @@
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="text-center">
               <div class="card-header">
-                <h2 class="display-6 fw-normal ">Creación de Pedido</h2>
+                <h2 class="display-6 fw-normal">Editar Cotización #123</h2>
               </div>
             </div>
             <div class="cabecera-doc card mb-4 rounded-3 shadow-sm">
@@ -89,21 +89,21 @@
                 </div>
                 <div class="col-4">
                   <div class="mb-3">
-                    <label for="jefebodega" class="form-label">Jefe Bodega:</label>
+                    <label for="jefecompras" class="form-label">Jefe Compras:</label>
                     <select class="form-select" aria-label="Default select example">
-                      <option selected>-----</option>
-                      <option value="1">Jefe bodega1</option>
-                      <option value="2">Jefe bodega2</option>
-                      <option value="3">Jefe bodega3</option>
+                      <option>-----</option>
+                      <option value="1">Jefe compras1</option>
+                      <option selected value="2">Jefe compras2</option>
+                      <option value="3">Jefe compras3</option>
                     </select>
                   </div>
                   <div class="mb-3">
-                    <label for="jefecompras" class="form-label">Jefe Compras:</label>
+                    <label for="jefebodega" class="form-label">Proveedor:</label>
                     <select class="form-select" aria-label="Default select example">
-                      <option selected>-----</option>
-                      <option value="1">Jefe compras1</option>
-                      <option value="2">Jefe compras2</option>
-                      <option value="3">Jefe compras3</option>
+                      <option >-----</option>
+                      <option selected value="1">Proveedor1</option>
+                      <option value="2">Proveedor2</option>
+                      <option value="3">Proveedor3</option>
                     </select>
                   </div>
                 </div>
@@ -115,12 +115,24 @@
                   <div class="">
                     <label for="estado" class="form-label">Estado:</label>
                     <select class="form-select" aria-label="Default select example">
-                      <option selected>-----</option>
-                      <option value="1">Activo</option>
+                      <option selected value="1">Activo</option>
                       <option value="1">Inactivo</option>
                       <option value="1">Pendiente</option>
                       <option value="1">Realizado</option>
                       <option value="1">Anulado</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="">
+                    <label for="estado" class="form-label">Pedido relacionado:</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option>-----</option>
+                      <option value="1">Pedido #1</option>
+                      <option value="1">Pedido #2</option>
+                      <option value="1">Pedido #3</option>
+                      <option selected value="1">Pedido #4</option>
+                      <option value="1">Pedido #5</option>
                     </select>
                   </div>
                 </div>
@@ -149,6 +161,7 @@
                           <th scope="col">Producto</th>
                           <th scope="col">Codigo</th>
                           <th scope="col">Cantidad</th>
+                          <th scope="col">Precio</th>
                           <th scope="col">Eliminar</th>
                         </tr>
                       </thead>
@@ -157,6 +170,7 @@
                           <th scope="row">Escritorio</th>
                           <td>ESC002</td>
                           <td>20</td>
+                          <td>$5</td>
                           <td class="col-sm-1">
                             <!-- -->
                             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModalDel">
@@ -171,6 +185,7 @@
                           <th scope="row">Mouse</th>
                           <td>MO033</td>
                           <td>6</td>
+                          <td>$4</td>
                           <td class="col-sm-1">
                             <!-- -->
                             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModalDel">
@@ -185,6 +200,7 @@
                           <th scope="row">Marcadores</th>
                           <td>Marc109</td>
                           <td>24</td>
+                          <td>$1</td>
                           <td class="col-1">
                             <!-- -->
                             <button type="button" class="btn btn-danger">
@@ -198,8 +214,19 @@
                       </tbody>
                     </table>
                 </div>
+                <div class="row">
+                  <div class="col-6">
+                  </div>
+                  <div class="col-4">
+                  </div>
+                  <div class="col-2">
+                    <div>
+                      <strong class="form-label">Total: $56</strong>
+                    </div>
+                  </div>
+                </div> 
             </div>
-            <a type="button" class="btn btn-lg btn-outline-primary" href="pedidos.html">Guardar documento</a>
+            <a type="button" class="btn btn-lg btn-outline-primary" href="cotizaciones.html">Guardar Cambios</a>
           </div>
         </form>
     </section>
